@@ -1,38 +1,145 @@
 .App {
   text-align: center;
+  color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
 }
+.nav{
+  color:#fff;
+  font-size: large;
+}
+.card{
+  width:300px;
+}
+#slide{
+height: 600px;
+width:1350px;
+overflow-x: hidden;
+}
+/*Title on Page1*/
 
-.App-link {
-  color: #61dafb;
+i{
+color: aliceblue; 
+}
+/*Carousel 1*/
+#btn
+{
+   width: 250px;
+   height: 50px;
+   border: none;
+   border-radius:30px;
+   background: #7F7FD5;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color:rgb(255, 255, 255);
+   font-size: 18px;
+   font-weight: bold;
+   z-index: -1;
+}
+#btn:hover{
+   box-shadow: 8px 8px 8px gray;
+}
+.row1{
+  position:relative;
+  align-items: center;
+}
+#fig h1{
+  font-size: 22px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#fig p{
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#footer{
+  position: relative;
+  top: 120px;
+  background-color: black;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  text-align: center;
+}
+footer h6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+footer p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+#slide{
+  opacity: 0.8;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+.social a{
+  font-size: 18px;
+  display: inline-block;
+  background: #545454;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  border-width: 3px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s
+}
+.social a:hover{
+  background-color: rgb(37, 191, 238);
+  box-shadow:6px 6px 6px #ffffff;
+}
+.carousel-caption h1{
+  font-size: 75px;
+  color: white;
+  /* text-overflow: ellipsis; */
+  text-shadow: 10px 10px 10px black,8px 8px 8px gray;;
+}
+.carousel-caption p{
+  position: relative;
+  font-size: 35px;
+  text-shadow: 6px 6px 4px black;
+  overflow-x: hidden;
+}
+figcaption{
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  font-size: large;
+  color: antiquewhite;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .carousel-caption {font-size:45px;}
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .carousel-caption {font-size:55px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .carousel-caption{font-size:65px;}
+} 
+
+
